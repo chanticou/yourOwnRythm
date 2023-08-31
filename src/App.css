@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content_image {
+  background-image: url(https://res.cloudinary.com/dg05pzjsq/image/upload/v1693312072/orquesta_h1algk.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover; /* Ajusta el tamaño para cubrir todo el contenedor */
+  height: 100vh; /* Utiliza la altura de la ventana gráfica */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 52px 0;
+  justify-content: space-evenly;
+}
+
+.content_title {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  border: 4px solid rgb(0, 0, 0);
+  max-width: 752px; /* Establece un ancho máximo */
+  width: 90%; /* Usando un porcentaje del ancho del contenedor padre */
+  margin: auto;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5);
+  padding: 20px; /* Añade algún espacio interno para el contenido */
+
+  /* Media query para ajustar el estilo en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    max-width: 100%; /* Ocupar todo el ancho disponible en pantallas pequeñas */
+    border-width: 2px; /* Reducir el grosor del borde */
+    padding: 10px; /* Ajustar el espacio interno */
+    box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.5); /* Reducir la sombra */
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  color: aliceblue;
+  text-align: center;
 }
